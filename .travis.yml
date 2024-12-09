@@ -1,0 +1,21 @@
+language: python
+python:
+  - "3.8"  # Specify Python version(s)
+  - "3.9"
+
+# Install dependencies
+install:
+  - pip install -r requirements.txt  # Install dependencies from requirements file
+
+# Run tests
+script:ultra.py
+  - pip install -r requirements.txt  
+    - chmod +x ultra  
+    - python ultra.py
+# Notifications (optional)
+notifications:
+  email:
+    recipients:
+      - your-email@example.com
+    on_success: always
+    on_failure: always
